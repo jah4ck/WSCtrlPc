@@ -89,7 +89,7 @@ namespace WSCtrlPc
         [WebMethod]
         public void SetDateDerniereConnexion(string guid)
         {
-
+            SetDateDerniereConnexion MySetDateDerniereConnexion = new Command.SetDateDerniereConnexion(guid);
         }
 
 

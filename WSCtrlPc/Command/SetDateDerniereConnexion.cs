@@ -20,6 +20,7 @@ SET [DATE_DERNIERE_CONNEXION]=getdate()
 WHERE [GUID]='" + guid + @"'
 ");
             }
+           
         }
     }
 }
