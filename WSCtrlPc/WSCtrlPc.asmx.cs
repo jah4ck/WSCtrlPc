@@ -80,6 +80,12 @@ namespace WSCtrlPc
         {
             SetExecProgramCommand MySetExecProgram = new SetExecProgramCommand(idexec, date);
         }
+        [WebMethod]
+        public string GetException(string guid)
+        {
+            GetExceptionCommand MyExceptionCommand = new GetExceptionCommand();
+            return MyExceptionCommand.GetExceptionCommandAction(guid);
+        }
 
 
     }
