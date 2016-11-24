@@ -86,6 +86,16 @@ namespace WSCtrlPc
             GetExceptionCommand MyExceptionCommand = new GetExceptionCommand();
             return MyExceptionCommand.GetExceptionCommandAction(guid);
         }
+        [WebMethod]
+        public void SetDateDerniereConnexion(string guid)
+        {
+
+        }
+
+
+        //penser a ajouter des contrôle de ce qu'on insert en BDD
+        
+
 
 
     }

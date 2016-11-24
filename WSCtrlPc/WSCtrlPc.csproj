@@ -128,9 +128,11 @@
     <Compile Include="Command\GetExecProgramCommand.cs" />
     <Compile Include="Command\GetPlageHoraireCommand.cs" />
     <Compile Include="Command\GetPlanningCommand.cs" />
+    <Compile Include="Command\SetDateDerniereConnexion.cs" />
     <Compile Include="Command\SetDownloadFileCommand.cs" />
     <Compile Include="Command\SetExecProgramCommand.cs" />
     <Compile Include="Command\TraceLogCommand.cs" />
+    <Compile Include="Helper\HelperControle.cs" />
     <Compile Include="Model\ExecReqSqlNoQuery.cs" />
     <Compile Include="Model\ExecReqSqlReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
