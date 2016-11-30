@@ -37,6 +37,12 @@ namespace WSCtrlPc
             TraceLogCommand MyTraceLogCommand = new TraceLogCommand();
             MyTraceLogCommand.TraceLogAction(guid,dateTraitement,codeappli,codeerreur,description);
         }
+        [WebMethod]
+        public string TraceLogNew(string guid, DateTime dateTraitement, string codeappli, int codeerreur, string description)
+        {
+            WSCtrlPcInsert.WSCtrlPcInsert ws = new WSCtrlPcInsert.WSCtrlPcInsert();
+            return ws.TraceLog(guid, dateTraitement, codeappli, codeerreur, description);
+        }
 
         [WebMethod]
         public string GetPlanning(string guid)
