@@ -98,7 +98,11 @@ namespace WSCtrlPc
             SetDateDerniereConnexion MySetDateDerniereConnexion = new Command.SetDateDerniereConnexion(guid);
         }
 
-
+        [WebMethod]
+        public void SetIncrementeRelica(string guid)
+        {
+            SetIncrementeRelicaCommand mySetIncrementeRelica = new SetIncrementeRelicaCommand(guid);
+        }
         //penser a ajouter des contrôle de ce qu'on insert en BDD
         
 

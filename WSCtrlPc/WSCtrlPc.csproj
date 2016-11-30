@@ -140,6 +140,7 @@
     <Compile Include="Command\SetDateDerniereConnexion.cs" />
     <Compile Include="Command\SetDownloadFileCommand.cs" />
     <Compile Include="Command\SetExecProgramCommand.cs" />
+    <Compile Include="Command\SetIncrementeRelicaCommand.cs" />
     <Compile Include="Command\TraceLogCommand.cs" />
     <Compile Include="Helper\HelperControle.cs" />
     <Compile Include="Model\ExecReqSqlNoQuery.cs" />
