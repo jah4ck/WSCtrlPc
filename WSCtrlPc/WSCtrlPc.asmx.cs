@@ -62,6 +62,14 @@ namespace WSCtrlPc
             GetPlageHoraireCommand MyGetPlageHoraireCommand = new GetPlageHoraireCommand();
             return MyGetPlageHoraireCommand.GetPlageHoraireCommandAction(guid, dateheure);
         }
+
+        [WebMethod]
+        public string GetRemLogInfo(string guid)
+        {
+            GetRemLogInfoCommand MyGetRemLogInfoCommand = new GetRemLogInfoCommand();
+            return MyGetRemLogInfoCommand.GetRemLogInfoCommandAction(guid);
+        }
+
         [WebMethod]
         public string GetDownloadFile(string guid,DateTime date)
         {
