@@ -137,6 +137,7 @@
     <Compile Include="Command\GetExecProgramCommand.cs" />
     <Compile Include="Command\GetPlageHoraireCommand.cs" />
     <Compile Include="Command\GetPlanningCommand.cs" />
+    <Compile Include="Command\GetPresenceFileCommand.cs" />
     <Compile Include="Command\GetRemLogInfoCommand.cs" />
     <Compile Include="Command\SetDateDerniereConnexion.cs" />
     <Compile Include="Command\SetDownloadFileCommand.cs" />

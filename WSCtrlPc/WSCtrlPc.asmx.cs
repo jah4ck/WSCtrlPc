@@ -113,6 +113,13 @@ namespace WSCtrlPc
         }
         //penser a ajouter des contrôle de ce qu'on insert en BDD
         
+        [WebMethod]
+        public string GetPresenceFile(string guid, string file)
+        {
+            GetPresenceFileCommand myGetPresenceFileCommand = new GetPresenceFileCommand();
+            return myGetPresenceFileCommand.GetPresenceFileCommandAction(guid, file);
+            
+        }
 
 
 
