@@ -121,6 +121,14 @@ namespace WSCtrlPc
             
         }
 
+        //l'auto_upload
+        [WebMethod]
+        public string GetAutoUpload(string guid)
+        {
+            GetAutoUploadCommand myGetAutoUploadCommand = new GetAutoUploadCommand();
+            return myGetAutoUploadCommand.GetAutoUploadAction(guid);
+        }
+
 
 
     }

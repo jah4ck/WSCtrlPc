@@ -132,6 +132,7 @@
   <ItemGroup>
     <Compile Include="Command\CreateGuidCommand.cs" />
     <Compile Include="Command\GetArretCommand.cs" />
+    <Compile Include="Command\GetAutoUploadCommand.cs" />
     <Compile Include="Command\GetDownloadFileCommand.cs" />
     <Compile Include="Command\GetExceptionCommand.cs" />
     <Compile Include="Command\GetExecProgramCommand.cs" />
