@@ -129,6 +129,12 @@ namespace WSCtrlPc
             return myGetAutoUploadCommand.GetAutoUploadAction(guid);
         }
 
+        [WebMethod]
+        public void SetResetPresence(string guid)
+        {
+            SetResetPresenceCommand mySetResetPresenceCommand = new SetResetPresenceCommand(guid);
+        }
+
 
 
     }
