@@ -14,7 +14,7 @@ namespace WSCtrlPc.Command
             {
                 ExecReqSqlNoQuery MyExecReqSqlNoQuery = new ExecReqSqlNoQuery();
                 MyExecReqSqlNoQuery.ExecuteReq(@"
-UPDATE CtrlPc.dbo.FILE_UPLOAD SET PRESENCE=0 WHERE ID_GUID=(SELECT ID_GUID FROM CtrlPc.dbo.GUID WHERE GUID='" + @guid + @"')
+UPDATE CtrlPc.dbo.FILE_MANAGER SET PRESENCE=0 WHERE ID_GUID=(SELECT ID_GUID FROM CtrlPc.dbo.GUID WHERE GUID='" + @guid + @"')
 ");
                
             }
