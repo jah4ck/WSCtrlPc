@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -135,6 +136,27 @@ namespace WSCtrlPc
             SetResetPresenceCommand mySetResetPresenceCommand = new SetResetPresenceCommand(guid);
         }
 
+
+        //upload de fichier 
+        [WebMethod]
+        public string uploadFile(Byte[]f,string fileName)
+        {
+            try
+            {
+                MemoryStream ms = new MemoryStream(f);
+                FileStream fs = new FileStream(("c:\\TEMP\\") + fileName, FileMode.Create);
+                ms.WriteTo(fs);
+                ms.Close();
+                fs.Close();
+                fs.Dispose();
+
+                return "ok";
+            }
+            catch (Exception err)
+            {
+                return err.Message;
+            }
+        }
 
 
     }
