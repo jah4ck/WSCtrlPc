@@ -158,6 +158,14 @@ namespace WSCtrlPc
             }
         }
 
+        [WebMethod]
+        public string GetHeartbeat(string guid, DateTime date)
+        {
+            SetDateDerniereConnexion(guid);
+            GetHeartbeatCommand myGetHeartbeatCommand = new GetHeartbeatCommand();
+            return myGetHeartbeatCommand.GetHeartbeatCommandAction(guid, date);
+        }
+
 
     }
 }

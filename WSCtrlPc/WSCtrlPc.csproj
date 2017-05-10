@@ -136,6 +136,7 @@
     <Compile Include="Command\GetDownloadFileCommand.cs" />
     <Compile Include="Command\GetExceptionCommand.cs" />
     <Compile Include="Command\GetExecProgramCommand.cs" />
+    <Compile Include="Command\GetHeartbeatCommand.cs" />
     <Compile Include="Command\GetPlageHoraireCommand.cs" />
     <Compile Include="Command\GetPlanningCommand.cs" />
     <Compile Include="Command\GetPresenceFileCommand.cs" />
